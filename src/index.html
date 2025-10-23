@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IQCraft - Craft Your IQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🧠 IQ-Craft</h1>
+    <menu>
+      <li><a href="menu-item.html" target="_blank">Requirements</a></li>
+      <li><a href="https://developer.chrome.com/docs/ai/built-in" target="_blank">Chrome Built-in AI</a></li>
+    </menu>
+
+  </header>
+  <div class="main">
+    <div class="hero-text">
+      <strong>IQ-Craft - Make your learning interactive and examine!</strong><br>Transform any article, text file or direct text into interactive study materials instantly. 
+      Our on-device AI creates <i>detailed summaries, generates custom flashcards,</i> and builds <i>practice quizzes</i> - all processed locally on your device browser with 'Chrome Built-in AI' with complete privacy. 
+      Perfect for students, researchers, and lifelong learners who want to master content faster and retain information better with hands-on practice.
+    </div>
+    <div id="features">
+      <div id="feature-item"><svg fill="currentColor" width="30px" height="30px" viewBox="-2.5 0 19 19"><path d="M2.85 4.836a1.03 1.03 0 0 1-1.029 1.03h-.003a1.03 1.03 0 1 1 0-2.059h.003a1.03 1.03 0 0 1 1.03 1.03zm0 4.346a1.03 1.03 0 0 1-1.029 1.03h-.003a1.03 1.03 0 1 1 0-2.059h.003a1.03 1.03 0 0 1 1.03 1.03zm0 4.346a1.03 1.03 0 0 1-1.029 1.03h-.003a1.03 1.03 0 1 1 0-2.059h.003a1.03 1.03 0 0 1 1.03 1.03zm1.13-8.692a1.03 1.03 0 0 1 1.029-1.029h7.173a1.03 1.03 0 1 1 0 2.058H5.009a1.03 1.03 0 0 1-1.03-1.029zm9.231 4.347a1.03 1.03 0 0 1-1.029 1.029H5.009a1.03 1.03 0 1 1 0-2.059h7.173a1.03 1.03 0 0 1 1.03 1.03zm0 4.345a1.03 1.03 0 0 1-1.029 1.03H5.009a1.03 1.03 0 1 1 0-2.059h7.173a1.03 1.03 0 0 1 1.03 1.03z"/></svg>Auto Summarization</div>
+      <div id="feature-item"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"><path d="M13 0H3a3.009 3.009 0 0 0-3 3v13.99a3.009 3.009 0 0 0 3 3h10a3.009 3.009 0 0 0 3-3V3a3.009 3.009 0 0 0-3-3zm1 16.99a1.016 1.016 0 0 1-1 1H3a1.016 1.016 0 0 1-1-1V3a1.016 1.016 0 0 1 1-1h10c.549.009.991.451 1 1v13.99z"></path> <path d="M20 7v14a3.009 3.009 0 0 1-3 3H5a1 1 0 0 1 0-2h12a1.016 1.016 0 0 0 1-1V7a1 1 0 0 1 2 0z"></path> <circle cx="8" cy="15" r="1"></circle> <path d="M12 8a3.992 3.992 0 0 1-3 3.87V12a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1 2 2 0 1 0-2-2 1 1 0 1 1-2 0 4 4 0 1 1 8 0z"></path></svg>Quiz Maker and Evaluation</div>
+      <div id="feature-item"><svg width="30px" height="30px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 10H5c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2zM5 20v-8h14l.002 8H5zM5 6h14v2H5zm2-4h10v2H7z"/></svg>Flashcard Generation</div>
+      <div id="feature-item"><svg width="30px" height="30px" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M14,9 C14.5523,9 15,9.44772 15,10 L15,13 C15,14.1046 14.1046,15 13,15 L3,15 C1.89543,15 1,14.1046 1,13 L1,10 C1,9.44772 1.44772,9 2,9 C2.55228,9 3,9.44771 3,10 L3,13 L13,13 L13,10 C13,9.44771 13.4477,9 14,9 Z M8,1 C8.55228,1 9,1.44772 9,2 L9,6.58579 L10.2929,5.29289 C10.6834,4.90237 11.3166,4.90237 11.7071,5.29289 C12.0976,5.68342 12.0976,6.31658 11.7071,6.70711 L8,10.4142 L4.29289,6.70711 C3.90237,6.31658 3.90237,5.68342 4.29289,5.29289 C4.68342,4.90237 5.31658,4.90237 5.70711,5.29289 L7,6.58579 L7,2 C7,1.44772 7.44772,1 8,1 Z"/></svg>Flashcard Save and Download</div>
+    </div>
+
+    <div id="inputArea">
+      <input id="userInput" placeholder="Paste your article, text, URL or upload txt file here..." autofocus></input>
+      <input type="file" id="fileInput" accept=".txt" style="display: none;">
+      <button id="uploadBtn" class="upload-btn" title="Upload .txt file">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" /></svg>
+      </button>
+      <button id="generateBtn" class="action-btn">Go<svg width="25px" height="25px" viewBox="0 0 48 48" fill="none"><path d="M48 0H0V48H48V0Z" fill="none" fill-opacity="0.01" /><path d="M43 5L29.7 43L22.1 25.9L5 18.3L43 5Z" stroke="currentColor" stroke-width="4"
+            stroke-linejoin="round" /><path d="M43.0001 5L22.1001 25.9" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+    </div>
+
+    <div id="liveStatus"></div>
+
+    <div id="outputContainer"></div>
+    
+  </div>
+
+  <footer>
+    Adya Prasad (आद्या प्रसाद) 🤟 © all right reserved 2025
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

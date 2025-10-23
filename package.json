@@ -1,0 +1,28 @@
+{
+  "name": "iq-craft",
+  "version": "1.0.0",
+  "description": "Transform any article, text file or direct text into interactive study materials: summary, flashcards, and quiz",
+  "keywords": [
+    "quiz maker",
+    "ai application",
+    "flashcards",
+    "ai summary",
+    "ai summarization"
+  ],
+  "license": "MIT",
+  "author": "Adya Prasad",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "jsdom": "^25.0.1",
+    "netlify-cli": "^23.9.3",
+    "netlify-lambda": "^2.0.16",
+    "node-fetch": "^2.7.0",
+    "serverless-http": "^4.0.0"
+  }
+}

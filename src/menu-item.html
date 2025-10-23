@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requirements - IQ-Craft</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .main {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      .requirement-section {
+        background: #ffffff;
+        border-radius: 9px;
+        border-left: 4px solid #d935a0;
+        padding: 18px;
+        margin: 15px 0;
+        box-shadow: 0 1px 4px rgba(54, 50, 54, 0.3);
+      }
+
+      .requirement-section h3 {
+        margin-top: 0;
+        color: #2c3e50;
+      }
+      .requirement-section ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      .requirement-section li {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+      .requirement-section code {
+        background-color: rgba(183, 174, 187, 0.795);
+        border-radius: 3px;
+        padding: 4px;
+        display: block;
+      }
+      .action-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 24px;
+        background: linear-gradient(150deg, #ff8cad, #d935a0);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+      .action-btn:hover {
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🧠 IQ-Craft</h1>
+      <menu>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a
+            href="https://developer.chrome.com/docs/ai/built-in"
+            target="_blank"
+            >Chrome Built-in AI</a
+          >
+        </li>
+      </menu>
+    </header>
+
+    <div class="main">
+      <h1>📋 System Requirements</h1>
+
+      <div class="requirement-section">
+        <h3>🌐 Browser Requirements</h3>
+        <ul>
+          <li>
+            <strong>Chrome Version:</strong> Chrome 127+ (Stable) or Chrome 138+
+            (for all features) [Chrome Canary]
+          </li>
+          <li>
+            <strong>Operating System:</strong> Windows, macOS, Linux, or
+            ChromeOS
+          </li>
+          <li>
+            <strong>Internet Connection (unmetered):</strong> Required only for
+            fetching articles from URLs (AI processing works offline and
+            locally)
+          </li>
+        </ul>
+      </div>
+
+      <div class="requirement-section">
+        <h3>🤖 AI Model Requirements</h3>
+        <ul>
+          <li>
+            <strong>Gemini Nano:</strong> Built-in AI model (downloads
+            automatically on first use)
+          </li>
+          <li>
+            <strong>Storage Space:</strong> At least 22 GB of free space on the
+            volume that contains your Chrome profile
+          </li>
+          <li>
+            GPU: Strictly more than 4 GB of VRAM. CPU: 16 GB of RAM or more and
+            4 CPU cores or more.
+          </li>
+        </ul>
+      </div>
+
+      <h2>⚙️ Enable Chrome AI Features</h2>
+
+      <div class="requirement-section">
+        <h3>Step 1: Enable AI Flags</h3>
+        <p>Open Chrome and navigate to:</p>
+        <ul>
+          <li>
+            <code>chrome://flags/#optimization-guide-on-device-model</code>
+          </li>
+          <li>Set to: <strong>Enabled BypassPerfRequirement</strong></li>
+        </ul>
+      </div>
+
+      <div class="requirement-section">
+        <h3>Step 2: Enable Prompt API</h3>
+        <ul>
+          <li><code>chrome://flags/#prompt-api-for-gemini-nano</code></li>
+          <li>Set to: <strong>Enabled</strong></li>
+        </ul>
+      </div>
+
+      <div class="requirement-section">
+        <h3>Step 3: Enable Summarization API</h3>
+        <ul>
+          <li>
+            <code>chrome://flags/#summarization-api-for-gemini-nano</code>
+          </li>
+          <li>Set to: <strong>Enabled</strong></li>
+        </ul>
+      </div>
+
+      <div class="requirement-section">
+        <h3>Step 4: Restart Chrome</h3>
+        <p>
+          After enabling all flags, restart Chrome for changes to take effect.
+        </p>
+      </div>
+
+      
+      <div class="requirement-section">
+        <h2>Setup and run locally in your device</h2>
+        <code>git clone https://github.com/Adya-Prasad/IQ-Craft.git </code>
+        <code>cd [folder]</code>
+        <code>npm install</code>
+        <code>npm start</code>
+        <ul><li>Application runs at <code> http://localhost:3000</code></li>
+          <li>Open the locallost URL in
+        browser, enter your input (text, txt file or URL) and click 'Go' </li>
+      <li>You will get summarization and action buttons to generate flashcards or quizzes. Choose the button and start learning.</li></ul>
+      </div>
+<h2>✨ Features</h2>
+      <div class="requirement-section">
+        <h3>What You Can Do:</h3>
+        <ul>
+          <li>
+            📝 <strong>Auto Summarization:</strong> Get detailed summaries with
+            key points extracted
+          </li>
+          <li>
+            🎴 <strong>Flashcard Generation:</strong> Create study flashcards
+            automatically from summaries
+          </li>
+          <li>
+            📊 <strong>Quiz Creation:</strong> Generate 10 multiple-choice
+            questions to test understanding
+          </li>
+          <li>
+            💾 <strong>Download Flashcards:</strong> Save flashcards as
+            high-quality PNG images
+          </li>
+          <li>
+            🔒 <strong>Privacy First:</strong> All AI processing happens on your
+            device—no data sent to servers
+          </li>
+        </ul>
+      </div>
+
+      <h2>🔗 Useful Links</h2>
+
+      <div class="requirement-section">
+        <ul>
+          <li>
+            <a
+              href="https://developer.chrome.com/docs/ai/built-in"
+              target="_blank"
+              >Chrome Built-in AI Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.chrome.com/docs/ai/prompt-api"
+              target="_blank"
+              >Prompt API Guide</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.chrome.com/docs/ai/summarizer-api"
+              target="_blank"
+              >Summarizer API Guide</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <a href="index.html" class="action-btn">← Back to IQ-Craft</a>
+    </div>
+  </body>
+</html>
